@@ -32,18 +32,18 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 <!-- !PAGE CONTENT! -->
 <?php
-  // Get cURL resource
-  $curl = curl_init();
-  // Set options
-  $dataURL = 'https://developer.nps.gov/api/v1/parks?stateCode=me';
-  curl_setopt_array($curl, array(
-    CURLOPT_RETURNTRANSFER =--> true,
-    CURLOPT_URL => $dataURL,
-    CURLOPT_USERAGENT => $_SERVER['HTTP_USER_AGENT'],
-    CURLOPT_HTTPHEADER => array('Authorization: b0tf1QlwN6PCCLg8h2T98d3oc7DYv9RKch9h2hYv')
-  ));
-  // Additional code would follow
-  print "<h1>" . $curl . "</h1>"
+// Get cURL resource
+$curl = curl_init();
+// Set options
+$dataURL = 'https://developer.nps.gov/api/v1/parks?stateCode=me';
+curl_setopt_array($curl, array(
+CURLOPT_RETURNTRANSFER =--> true,
+CURLOPT_URL => $dataURL,
+CURLOPT_USERAGENT => $_SERVER['HTTP_USER_AGENT'],
+CURLOPT_HTTPHEADER => array('Authorization: b0tf1QlwN6PCCLg8h2T98d3oc7DYv9RKch9h2hYv')
+));
+// Additional code would follow
+print "<h1>" . $curl . "</h1>"
 ?>
 <div class="w3-main" style="margin-left:300px">
 
